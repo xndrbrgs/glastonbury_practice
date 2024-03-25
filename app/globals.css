@@ -15,30 +15,34 @@ body {
 
 @media (min-width: 240px) {
   html {
-    font-size: calc(6.86px + 9.14 * ((100vw - 240px) / 239));
+    font-size: calc(8px + 8 * ((100vw - 240px) / 239));
   }
 }
 @media (min-width: 768px) {
   html {
-    font-size: calc(12.29px + 3.71 * ((100vw - 768px) / 223));
+    font-size: calc(12px + 4 * ((100vw - 768px) / 223));
   }
 }
 @media (min-width: 992px) {
   html {
-    font-size: calc(10.97px + 5.03 * ((100vw - 992px) / 448));
+    font-size: calc(9.77px + 6.23 * ((100vw - 992px) / 448));
   }
 }
 
 @media (min-width: 1440px) {
   html {
-    font-size: calc(16px + 2.24 * ((100vw - 1440px) / 210));
+    font-size: calc(16px + 2.32 * ((100vw - 1440px) / 1120));
   }
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 2560px) {
   html {
-    font-size: 18.24px;
+    font-size: 18.32px;
   }
+}
+
+.container {
+  max-width: 139.73333333333335rem;
 }
 
 @layer base {
@@ -53,6 +57,8 @@ body {
 
     --blue: #0054c7;
     --cream: #fdf4e8;
+    --pink: #e07777;
+    --green: #77e080;
 
     --white-50: #ffffff;
     --white-100: #e7e7e7;
@@ -61,8 +67,8 @@ body {
 
     /* FONTS */
 
-    --fs-display: 8.9375rem;
-    --lh-display: 1.2em;
+    --fs-display: 7.2rem;
+    --lh-display: 0.9em;
     --fs-display-md: 5.75rem;
     --lh-display-md: 1.2em;
     --fs-display-sm: 2.625rem;
@@ -85,6 +91,18 @@ body {
 }
 
 @layer components {
+  .display {
+    @apply lg:text-display md:text-display_md text-display_sm;
+  }
+
+  .h1 {
+    @apply lg:text-h1 md:text-h1_md text-h1_sm;
+  }
+
+  .h2 {
+    @apply lg:text-h2 md:text-h2_md text-h2_sm;
+  }
+
   /* GRID SYSTEM */
 
   .row {

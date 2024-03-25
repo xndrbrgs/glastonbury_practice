@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 
 import Lenis from "@studio-freight/lenis";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   useEffect(() => {
@@ -17,14 +18,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bg-black font-satoshi">
-      <section className="container max-w-full">
-        <div className="row">
-          <div className="col-12">
-            <h1 className="text-display">maxjoy studio template</h1>
-          </div>
-        </div>
-      </section>
+    <main>
+      <Hero />
     </main>
   );
 }
