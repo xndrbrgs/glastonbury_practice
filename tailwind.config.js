@@ -44,6 +44,7 @@ module.exports = {
       cream: "var(--cream)",
       pink: "var(--pink)",
       green: "var(--green)",
+      orange: "var(--orange)",
 
       "white-50": "var(--white-50)",
       "white-100": "var(--white-100)",

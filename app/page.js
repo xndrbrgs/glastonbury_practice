@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 import Lenis from "@studio-freight/lenis";
 import Hero from "@/components/Hero";
+import Menu from "@/components/Menu";
 
 export default function Home() {
   useEffect(() => {
@@ -19,7 +20,8 @@ export default function Home() {
 
   return (
     <main>
-      <Hero />
+      <Menu />
+      {/* <Hero /> */}
     </main>
   );
 }
