@@ -10,7 +10,10 @@ function Menu() {
                 <div className="col-1">MENU</div>
             </div>
         </div>
-        <div id='nav-middle'></div>
+        <div id='nav-middle'>
+          <div id='left'></div>
+          <div id='right'></div>
+        </div>
         <div id='nav-bottom'></div>
     </div>
     </nav>
